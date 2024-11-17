@@ -41,11 +41,9 @@ public class CurrencyHandler {
         OnionCurrency.config.set("currencies." + id, null);
         OnionCurrency.instance.saveConfig();
 
-        // 删除对应目录
-        File currencyFolder = new File(OnionCurrency.instance.getDataFolder(), "currencies/" + id);
-        if (currencyFolder.exists()) {
-            currencyFolder.delete();
-        }
+        // 删除对应文件
+        File currencyYml = new File(OnionCurrency.instance.getDataFolder(), "currencies/" + id + ".yml");
+        currencyYml.delete();
     }
 
     // 查看具体货币
