@@ -1,0 +1,22 @@
+currencies:
+    # 货币id 不允许重复
+    cs:
+      # 货币名称
+      name: "测试货币"
+      description: "这是一个测试货币"
+
+msg:
+  MESSAGE_PREFIX: "&7[&aOnionCurrency&7] "
+  CURRENCY_NOT_EXIST: "&7货币 &e{currency} &7不存在"
+  CURRENCY_ALREADY_EXIST: "&7货币 &e{currency} &7已存在"
+  ADD_CURRENCY_TO_PLAYER: "&7为玩家 &f{player} &7添加了 &f{amount} &7个 &e{currency}"
+  SET_CURRENCY_TO_PLAYER: "&7为玩家 &f{player} &7设置了 &f{amount} &7个 &e{currency}"
+  ADD_COMMAND_TIP: "&7请输入 &f/oc add <玩家id> <货币id> <数量>"
+  BAL_PLAYER_CURRENCY: "&7玩家 &f{player} &7当前拥有 &f{amount} &7个 &e{currency}"
+  BAL_COMMAND_TIP: "&7请输入 &f/oc bal <玩家id> <货币id>"
+  NEW_CURRENCY_SUCCESS: "&7成功创建货币：\n ID: &f{currency}\n &7名字: &f{name}\n &7介绍: &f{description}"
+  NEW_CURRENCY_TIP: "&7请输入 &f/oc new <货币id> <货币名字> <货币介绍>"
+  RELOAD_CONFIG: "&7配置文件重载完毕"
+  REMOVE_CURRENCY_SUCCESS: "&7成功移除货币 &e{currency}"
+  REMOVE_COMMAND_TIP: "&7请输入 &f/oc remove <货币id>"
+  SET_COMMAND_TIP: "&7请输入 &f/oc set <玩家id> <货币id> <数量>"
