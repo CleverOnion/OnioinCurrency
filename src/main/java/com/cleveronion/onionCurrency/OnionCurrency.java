@@ -2,6 +2,8 @@ package com.cleveronion.onionCurrency;
 
 import com.cleveronion.onionCurrency.command.OcCommand;
 import com.cleveronion.onionCurrency.constants.MessageConstants;
+import com.cleveronion.onionCurrency.papi.PapiCurrency;
+import org.bukkit.Bukkit;
 import org.bukkit.configuration.Configuration;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -25,6 +27,9 @@ public final class OnionCurrency extends JavaPlugin {
         loadMsg();
 
         getCommand("oc").setExecutor(new OcCommand());
+        if (Bukkit.getPluginManager().isPluginEnabled("PlaceholderAPI")) {
+            new PapiCurrency().register();
+        }
     }
 
     @Override

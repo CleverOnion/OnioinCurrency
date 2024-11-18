@@ -4,6 +4,7 @@ main: com.cleveronion.onionCurrency.OnionCurrency
 api-version: '1.20'
 description: "A plugin for expanding currencies for Minecraft Server"
 author: "CleverOnion"
+softdepend: ["PlaceholderAPI"] #
 commands:
   oc:
     description: "OnionCurrency command"
